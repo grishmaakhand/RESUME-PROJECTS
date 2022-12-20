@@ -1,29 +1,5 @@
 'use strict';
 
-/*
-
-//code for L70
-
-console.log(document.querySelector('.message'));
-console.log(document.querySelector('.message').textContent);
-
-*/
-
-//code for L72
-
-/*
-//to select nd set value 
-document.querySelector('.message').textContent = '🎉Correct number';
-document.querySelector('.number').textContent = 13;
-document.querySelector('.score').textContent = 5;
-
-console.log(document.querySelector('.guess').value);
-document.querySelector('.guess').value = 23;
-// we are using value because the type of guess class is input type and we can see 
-//the value on console 
-
-*/
-
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
 let highscore = 0;
@@ -68,29 +44,6 @@ document.querySelector('.check').addEventListener('click', function () {
     }
   }
 });
-
-//to low
-// else if (secretNumber > guess) {
-//   if (score > 1) {
-//     displayMessage('to low');
-//     score--;
-//     document.querySelector('.score').textContent = score;
-//   } else {
-//     displayMessage('loss the game');
-//     document.querySelector('.score').textContent = 0;
-//   }
-// }
-//to high
-//   else if (secretNumber < guess) {
-//     if (score > 1) {
-//       displayMessage('to high');
-//       score--;
-//       document.querySelector('.score').textContent = score;
-//     } else {
-//       displayMessage('loss the game');
-//       document.querySelector('.score').textContent = 0;
-//     }
-//   }
 
 document.querySelector('.again').addEventListener('click', function () {
   score = 20;
